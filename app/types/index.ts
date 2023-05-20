@@ -1,4 +1,4 @@
-import { User } from '@prisma/client'
+import { Listing, User } from '@prisma/client'
 
 
 // safe user to be used on navbar type
@@ -10,4 +10,12 @@ export type SafeUser = Omit<
     createdAt: string;
     updatedAt: string;
     emailVerified: string | null;
+}
+
+// safe listing type
+// replace the Date type to string type
+export type SafeListing = Omit<
+    Listing, 'createdAt'
+> & {
+    createdAt: string
 }

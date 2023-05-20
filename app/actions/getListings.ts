@@ -11,7 +11,11 @@ export default async function getListings() {
         })
 
         // return the listings
-        return listings
+        // map the listings and convert createdAt to string
+        return listings.map(listing => ({
+            ...listing,
+            createdAt: listing.createdAt.toISOString()
+        }))
     } catch (error: any) {
         throw new Error(error)
     }
