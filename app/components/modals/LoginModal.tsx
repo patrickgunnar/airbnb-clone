@@ -100,12 +100,6 @@ const LoginModal = () => {
             <hr />
             <Button
                 outline
-                label='Continue with Google'
-                icon={FcGoogle}
-                onClick={() => signIn('google')}
-            />
-            <Button
-                outline
                 label='Continue with Github'
                 icon={AiFillGithub}
                 onClick={() => signIn('github')}
