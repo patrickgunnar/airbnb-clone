@@ -95,7 +95,7 @@ const RegisterModal = () => {
     )
 
     // footer of the user registration form
-    // and github registration or login modal
+    // github registration or login modal
     const footerContent = (
         <div className="flex flex-col gap-4 mt-3">
             <hr />
